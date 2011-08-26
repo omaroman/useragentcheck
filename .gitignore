@@ -1,0 +1,11 @@
+/eclipse/
+/dist/
+*.class
+*.swp
+/lib/*
+/tmp/*
+/modules/*
+/.project
+/.classpath
+/.settings
+samples-and-tests/demo/tmp/*
