@@ -5,6 +5,7 @@
 /lib/*
 /tmp/*
 /modules/*
+/samples-and-tests/demo/modules/*
 /.project
 /.classpath
 /.settings

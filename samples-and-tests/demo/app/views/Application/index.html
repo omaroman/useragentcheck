@@ -1,0 +1,9 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+You should see the user agent check banner at the top of the screen.
+It will show only once and can be configured per agent. 
+
+<a href="@{ Application.deleteSession()}">Clear session</a>
+
+Voila -> %{ session.get("uc"); }%
