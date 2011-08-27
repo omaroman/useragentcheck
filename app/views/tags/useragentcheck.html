@@ -4,19 +4,25 @@ if(uc=="0")
 	displayBanner = false;
 else {
 	displayBanner = uc=="1" || useragentcheck.UserAgentCheck.check(request.headers.get("user-agent").value());
-	session.put("uc",displayBanner?"1","0");
+	session.put("uc",displayBanner?"1":"0");
 }
 }%
 #{if displayBanner}
+<div class="usercheck">
+<a href="&{'useragentcheck.url'}" target="_blank">
+  &{'useragentcheck.label'}
+</a>
+</div>
 <style>
 .usercheck {
-	background: #ffffe1 url(@{'/public/images/ugot/icon-info.gif'}) no-repeat fixed .3em .3em;
+	background: #ffe url(@{'/public/images/useragentcheck/icon-info.gif'}) no-repeat fixed .7em .4em;
 	border-bottom: .16em outset;
 	display: block;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 11px;
 	position: absolute;
 	top: 0;
+	left:0;
 	width: 100%
 }
 .usercheck a {
@@ -27,14 +33,9 @@ else {
 	text-indent: 20px
 }
 .usercheck :hover {
-	background:#3169B6 url(@{'/public/images/ugot/icon-info.gif'}) no-repeat fixed .3em .3em;
+	background:#3169B6 url(@{'/public/images/useragentcheck/icon-info.gif'}) no-repeat fixed .7em .4em;
 	color: #fff;
 	display: block
 }
 </style>
-<div class="usercheck">
-<a href="http://www.google.com/chrome" title="Click here to update" target="_blank">
-  Your browser is no longer supported. Click here to update...
-</a>
-</div>
 #{/if}

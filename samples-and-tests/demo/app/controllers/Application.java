@@ -15,7 +15,7 @@ public class Application extends Controller {
 
 	public static void deleteSession() {
 		session.clear();
-		render("Application/index.html");
+		index();
 	}
 
 }

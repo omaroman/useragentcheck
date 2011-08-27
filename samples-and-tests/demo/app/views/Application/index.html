@@ -6,4 +6,6 @@ It will show only once and can be configured per agent.
 
 <a href="@{ Application.deleteSession()}">Clear session</a>
 
-Voila -> %{ session.get("uc"); }%
+Voila -> ${ session.get("uc") }
+
+${ request.headers.get("user-agent").value() }

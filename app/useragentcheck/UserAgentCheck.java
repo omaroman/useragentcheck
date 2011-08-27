@@ -23,9 +23,10 @@ public class UserAgentCheck {
 			int majorVersion = Integer.parseInt(v);
 
 			if (majorVersion > 0) {
-				displayBannerFlag = (renderingEngine == "TRIDENT" && majorVersion <= 8);
-				displayBannerFlag |= (renderingEngine == "PRESTO" && majorVersion <= 10);
-				displayBannerFlag |= (renderingEngine == "GECKO" && majorVersion <= 2);
+				displayBannerFlag = (renderingEngine == "TRIDENT" && majorVersion <= 80);
+				displayBannerFlag |= (renderingEngine == "PRESTO" && majorVersion <= 100);
+				displayBannerFlag |= (renderingEngine == "GECKO" && majorVersion <= 20);
+				displayBannerFlag |= (renderingEngine == "WEBKIT" && majorVersion <= 20);
 			}
 			return displayBannerFlag;
 		} catch (Exception e) {

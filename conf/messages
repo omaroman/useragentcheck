@@ -1,5 +1,2 @@
-# Default useragentcheck messages
-# You can specialize this file for each language.
-# For exemple, for french create a messages.fr file
-
-#useragentcheck.name=useragentcheck
+useragentcheck.label=Your browser is no longer supported. Please click here to update...
+useragentcheck.url=http://www.google.com/chrome
