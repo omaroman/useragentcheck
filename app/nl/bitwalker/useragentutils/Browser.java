@@ -357,6 +357,4 @@ public enum Browser {
 	            "No enum const for id " + id);
 	}
 	
-	
-	
 }

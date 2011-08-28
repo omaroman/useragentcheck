@@ -139,7 +139,7 @@ public class UserAgent
 	 * Combined string representation of both enums
 	 */
 	public String toString() {
-		return this.operatingSystem.toString() + "-" + this.browser.toString();
+		return this.operatingSystem.toString() + '-' + this.browser.toString();
 	}
 	
 	/**

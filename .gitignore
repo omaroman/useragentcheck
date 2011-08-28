@@ -2,6 +2,7 @@
 /dist/
 *.class
 *.swp
+*.log
 /lib/*
 /tmp/*
 /modules/*
