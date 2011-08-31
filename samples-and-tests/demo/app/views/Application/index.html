@@ -1,11 +1,11 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-You should see the user agent check banner at the top of the screen.
-It will show only once and can be configured per agent. 
+<p style="margin-top:3em">This sample application is configured to display banner, no matter which browser version.</p>
 
-<a href="@{ Application.deleteSession()}">Clear session</a>
+<p><b>You user agent is:</b>${ request.headers.get("user-agent").value() } </p>
 
-Voila -> ${ session.get("uc") }
+<a href="@{ Application.deleteSession()}">Use this link to clear the session</a>
 
-${ request.headers.get("user-agent").value() }
+
+

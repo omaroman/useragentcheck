@@ -4,7 +4,7 @@
 
 UserAgentCheck provides an easy way to notify users when their browser is outdated. It displays a non disruptive banner at the top of the page and drives the user to a page where he/she may download an upgrade.
 
-LOGO
+![screenshot](screenshot.gif "Screenshot")
 
 
 ## How does it work ?
