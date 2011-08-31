@@ -4,7 +4,7 @@
 
 UserAgentCheck provides an easy way to notify users when their browser is outdated. It displays a non disruptive banner at the top of the page and drives the user to a page where he/she may download an upgrade.
 
-![screenshot](https://github.com/orefalo/useragentcheck/raw/master/screenshot.gif)
+![screenshot](https://github.com/orefalo/useragentcheck/raw/master/screenshot.png)
 
 
 ## How does it work ?
