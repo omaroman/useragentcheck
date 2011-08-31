@@ -2,14 +2,14 @@
 
 ## What is UserAgentCheck ?
 
-UserAgentCheck provides an easy way to notify users when their browser is outdated. It displays a non disruptive banner at the top of the page and drives the user to a page where he may upgrade his browser.
+UserAgentCheck provides an easy way to notify users when their browser is outdated. It displays a non disruptive banner at the top of the page and drives the user to a page where he/she may download an upgrade.
 
 LOGO
 
 
 ## How does it work ?
 
-It's no rocket science: the module provides a tag than needs to be included in your main template (typically main.html). In a nutshell, the module reads the user-agent header, figures the browser name and version and decides, based on your settings, if the banner should be displayed. To avoid redoing the same process on every request, it then stores the result in the session (which in Play translates to a cookie).
+It's no rocket science: the module provides a tag than may be included in your templates (typically `main.html`). In a nutshell, the module reads the user-agent header, figures the browser name/version and decides, based on your settings, if the banner should be displayed. To avoid redoing the same process on every request, it then stores the result in the session (which in Play translates to a cookie).
 
 ## Usage:
 
@@ -27,7 +27,7 @@ With the sample lines above, the banner will show if you use IE6 or prior, Opera
 
 ### Tag
 
-You should include this tag somewhere in your template. Preferable right at the top of the html body tag.
+You should include the `useragentcheck` tag somewhere in your template. Preferable right at the top of the html body.
 
     …    
     <body>
@@ -38,7 +38,7 @@ You should include this tag somewhere in your template. Preferable right at the 
 
 ### Banner settings
 
-The banner text and url are configured using the standard `conf/messages` file. The following entries are the defaults.
+The banner text and url may be configured using the standard `conf/messages` file. The default entries are
 
     useragentcheck.label=Your browser is no longer supported. Please click here to update...
     useragentcheck.url=http://www.google.com/chrome
@@ -46,7 +46,7 @@ The banner text and url are configured using the standard `conf/messages` file. 
 
 ## Sample application
 
-Part of the distribution
+a sample demo is part of the distribution
 
 ## Credits
 
