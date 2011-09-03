@@ -9,7 +9,9 @@ UserAgentCheck provides an easy way to notify users when their browser is outdat
 
 ## How does it work ?
 
-It's no rocket science: the module provides a tag than may be included in your templates (typically `main.html`). In a nutshell, the module reads the user-agent header, figures the browser name/version and decides, based on your settings, if the banner should be displayed. To avoid redoing the same process on every request, it then stores the result in the session (which in Play translates to a cookie).
+It's no rocket science: the module provides a tag than may be included in your templates (typically `main.html`). In a nutshell, the module reads the user-agent header, figures the browser name/version and decides, based on your settings, if the banner should be displayed. 
+
+To avoid redoing the same process on every request, it then stores the result in the session (which in Play translates to a cookie).
 
 ## Usage:
 
