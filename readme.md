@@ -19,7 +19,7 @@ To avoid redoing the same process on every request, it then stores the result in
 
 By using properties in `conf/application.conf` the developer has full control over when the banner should display.
 
-    useragentcheck.minInternetExplorerVersion = 7
+    useragentcheck.minInternetexplorerVersion = 7
     useragentcheck.minOperaVersion = 10
     useragentcheck.minFirefoxVersion = 5
     useragentcheck.minChromeVersion = 13
