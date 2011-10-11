@@ -63,7 +63,7 @@ If you want to customize Block Template, invoke the following command:
 
 ## Sample application
 
-a sample demo is part of the distribution
+two sample demos are part of the distribution
 
 ## Credits
 
