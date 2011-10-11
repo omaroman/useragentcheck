@@ -260,7 +260,7 @@ public class OperatingSystemTest {
 	}
 
 	/**
-	 * Test method for {@link nl.bitwalker.useragentutils.OperatingSystem#valueOf(short)} 
+	 * Test method for {@link nl.bitwalker.useragentutils.OperatingSystem#valueOf(short)}
 	 */
 	@Test
 	public void testValueOf() {
@@ -278,7 +278,7 @@ public class OperatingSystemTest {
 	}
 	
 	/**
-	 * Test method for {@link nl.bitwalker.useragentutils.OperatingSystem#valueOf(String)} 
+	 * Test method for {@link nl.bitwalker.useragentutils.OperatingSystem#valueOf(String)}
 	 */
 	@Test
 	public void testValueOfString() {

@@ -1,0 +1,1 @@
+GET    	${ctx}/agent                          	useragentcheck.WebUserAgent.block

@@ -1,16 +1,16 @@
 %{
 uc = session.get("uc");
-if(uc=="0")
+if(uc=="0") {
 	displayBanner = false;
-else {
-	displayBanner = uc=="1" || useragentcheck.UserAgentCheck.check(request.headers.get("user-agent").value());
-	session.put("uc",displayBanner?"1":"0");
+} else {
+    displayBanner = uc=="1" || play.modules.useragentcheck.UserAgentCheck.displayBanner(request.headers.get("user-agent").value());
+    session.put("uc",displayBanner?"1":"0");
 }
 }%
 #{if displayBanner}
 <div class="usercheck">
 <a href="&{'useragentcheck.url'}" target="_blank">
-  &{'useragentcheck.label'}
+    &{'useragentcheck.label'}
 </a>
 </div>
 <style>
